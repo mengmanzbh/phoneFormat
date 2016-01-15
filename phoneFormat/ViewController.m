@@ -14,6 +14,10 @@
 @end
 
 @implementation ViewController
+- (IBAction)show:(id)sender {
+    NSString *str = [self.textA.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSLog(@"%@",str);
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
